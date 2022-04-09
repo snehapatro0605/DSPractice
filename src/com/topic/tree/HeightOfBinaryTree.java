@@ -19,16 +19,11 @@ public class HeightOfBinaryTree {
 		{
 			if (node == null)
 				return -1;
-			else
-			{
-				int lDepth = maxDepth(node.left);
-				int rDepth = maxDepth(node.right);
-
-				if (lDepth > rDepth)
-					return (lDepth + 1);
-				else
-					return (rDepth + 1);
-			}
+			
+			int l = maxDepth(node.left);
+			int r = maxDepth(node.right);
+			
+		return Math.max(l, r)+1;
 		}
 		
 		public static void main(String[] args)

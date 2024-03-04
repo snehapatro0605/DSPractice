@@ -11,10 +11,10 @@ public class LongPallinString {
 			int len1 = expand(str,i,i);
 			int len2 = expand(str,i,i+1);
 			int len = Math.max(len1, len2);
-			if(len>end-start+1) {
+			if(len>end-start) {
 				start= i-(len-1)/2;
 				end = i+(len/2);
-				System.out.print("start: "+start+" end: "+end);
+				System.out.println(i+ " ;start: "+start+" end: "+end);
 			}			
 		}
 		
@@ -28,12 +28,12 @@ public class LongPallinString {
 			left--;
 			right++;
 		}
-		System.out.print(right-left-1+" ;");
+		System.out.println(right-left-1+" ;");
 		return right-left-1;	
 	}
 	public static void main(String[] args) {
 		String str = "racecar";
-		System.out.println(str);
+		//String str = "ccaabbabd";
 		System.out.print(longPallin(str));
 	}
 

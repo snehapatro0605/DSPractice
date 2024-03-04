@@ -31,7 +31,7 @@ public class FirstNRC {
 		return res;
 	}
 	public static void main(String[] args) {
-		String A = "aabc";
+		String A = "aabcbd";
 		System.out.print(ans(A));
 	}
 }

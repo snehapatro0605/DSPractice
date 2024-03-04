@@ -11,7 +11,7 @@ public class NonRepeatingElement {
 	}
 	static int linear(int arr[],int n) {
 		int ans = -1;
-		for(int i=0;i<n;i=i+2) {
+		for(int i=0;i<n-1;i=i+2) {
 			if(arr[i]!=arr[i+1]) {
 				ans = arr[i];
 				break;

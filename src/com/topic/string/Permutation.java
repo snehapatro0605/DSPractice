@@ -12,14 +12,15 @@ public class Permutation {
 		if(str.length()==0) {
 			pList.add(ans);
 			for(String s : pList)
-		System.out.println("plist: "+s);
+		System.out.print("plist: "+s+";");
+			System.out.println();
 		}
 		else {
 			for(int i=0;i<str.length();i++) {
 				System.out.print("str: "+str);
 				char ch = str.charAt(i);
 				String rem = str.substring(0,i)+str.substring(i+1);
-				System.out.println("; itr: "+i+ "; ch: "+ ch+ "; rem: "+rem);
+				System.out.println("; itr: "+i+ "; ch: "+ ch+ "; rem: "+rem+"; ans: "+ans);
 				permuteSol(rem,ans+ch,pList);
 				
 			}

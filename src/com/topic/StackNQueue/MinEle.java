@@ -33,7 +33,7 @@ public class MinEle {
 		}
 	}
 	
-	static int getMin() {
+	static int getMin() { 
 		int ans = stack.isEmpty()?-1:min;
 		System.out.println("Min ele: " + ans);
 		return ans;

@@ -23,8 +23,12 @@ public class NextLargerElement {
 		return nge;
 	}
 	public static void main(String[] args) {
-		int arr[] = {1,2,3,4};
-		System.out.print(nextLEle(arr));
+		//int arr[] = {1,2,3,4};
+		int arr[] = {1,5,4,3,7,6}; //5,6,6,6,-1
+		int arr2[] = nextLEle(arr);
+		for(int i=0;i<arr2.length;i++) {
+		System.out.print(arr2[i]+",");
+		}
 	}
 
 }

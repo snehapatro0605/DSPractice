@@ -10,6 +10,9 @@ public class RotatedByTwo {
 		String temp1 = a.substring(2)+a.substring(0,2);
 		String temp2 = a.substring(a.length()-2)+a.substring(0,a.length()-2);
 		
+		System.out.println(temp1);
+		System.out.println(temp2);
+		
 		if(temp1.equals(b) || temp2.equals(b))
 			return true;
 		return false;
